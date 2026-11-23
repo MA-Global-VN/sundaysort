@@ -58,10 +58,20 @@
 
   <h2>Permissions and why</h2>
   <ul>
-    <li><strong>Location</strong> – only while a trip you started is recording, to measure the distance you drive. On
-    Android, "Allow all the time" lets a running trip keep recording when the screen is off. Nothing is recorded when no
-    trip is running. If you turn on Automatic trips, the phone's motion detection (and, if you choose, your van's
-    Bluetooth) tells the app when you start driving. Your route is never sent to us.</li>
+    <li><strong>Location</strong> – to measure the miles you drive. Your routes stay on your phone and are never sent to us.
+      <ul>
+        <li><strong>Trips you start yourself:</strong> location is used only while the trip is recording. On Android,
+        "Allow all the time" lets the trip keep recording when the screen is off or the app is closed.</li>
+        <li><strong>Automatic trips</strong> (only if you turn them on): the app uses your location in the background,
+        even when the app is closed or not in use, to notice when you start driving and to record the trip. On Android,
+        when the motion sensor says the phone has started moving, the app checks its position for a few minutes (up to
+        about 25 if it keeps moving), first from the network, then from GPS. On iPhone, the system wakes the app when
+        your location changes a lot and when you leave the spot where your last trip ended (about 150 m). The motion
+        sensor and, if you choose, your van's Bluetooth help tell driving from walking. Positions from a check that turns
+        out not to be a drive are deleted when the check ends; a drive's positions become that trip's route. Turning
+        Automatic trips off stops all of this.</li>
+      </ul>
+    </li>
     <li><strong>Camera / photos</strong> – only when you add a receipt photo to an entry.</li>
     <li><strong>Notifications</strong> – local reminders you turn on (weekly sort, backup, trip running). They are
     created on your phone; there are no push notifications.</li>
@@ -74,6 +84,10 @@
   You choose where it goes – for example Google Drive, iCloud Drive, email or your accountant. That service's own privacy
   policy then applies to the copy you send. If you turn on nightly backup, the app saves a backup file every night to
   the folder you chose (for example in Google Drive) and nowhere else.</p>
+  <p><strong>Share trip diagnostics</strong> (for support) creates a file only when you ask for it. It holds what the trip
+  detector saw in the last 7 days (motion and Bluetooth events – only your van is named, other devices are not), the
+  times and miles of recent trips (no routes or positions), app settings and the last receipt readings. It opens your
+  phone's share sheet and goes only where you send it.</p>
 
   <h2>Deleting your data</h2>
   <p>Settings → Delete all data removes everything from the app. Uninstalling the app also removes it. Backup files you
