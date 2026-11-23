@@ -1,0 +1,35 @@
+/* Sunday Sort site — colours from the app's design tokens (design/tokens.css). */
+:root {
+  --bg: #faf8f4;
+  --surface: #ffffff;
+  --line: #e6e0d5;
+  --ink: #18202f;
+  --ink-muted: #596273;
+  --primary: #1f2a44;
+  --sunday: #f5b841;
+  --sunday-soft: #fdf1d8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12161c;
+    --surface: #1b2129;
+    --line: #2c343f;
+    --ink: #f2efe9;
+    --ink-muted: #a7afbc;
+    --primary: #f5b841;
+    --sunday-soft: #3a3020;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, "Segoe UI", Roboto, Inter, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 4px solid var(--sunday); padding-bottom: 16px; margin-bottom: 8px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+h2 { font-size: 20px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { margin: 0 0 10px; }
+.lead { color: var(--ink-muted); margin: 0; }
+.muted { color: var(--ink-muted); font-size: 15px; }
+.box { background: var(--sunday-soft); border-radius: 12px; padding: 14px 16px; margin: 20px 0; }
+a { color: var(--primary); }
+footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 15px; color: var(--ink-muted); }
